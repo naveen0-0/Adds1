@@ -27,7 +27,7 @@
 
 .authorName{
   padding-left: 10px;
-  font-family: "Fira Code";
+  font-family: 'Fira Code', monospace;
   color: rgb(192, 192, 192);
   font-weight: bold;
 }
@@ -47,5 +47,5 @@
   word-wrap: break-word;
   padding: 10px;
   border-radius: 10px;
-  font-family: "Fira Code";
+  font-family: 'Fira Code', monospace;
 }

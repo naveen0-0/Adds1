@@ -34,7 +34,7 @@
 
 .title{
   text-align: center;
-  font-family: "Fira Code";
+  font-family: 'Fira Code', monospace;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: clip;
@@ -54,13 +54,13 @@
 }
 
 .authorName{
-  font-family: "Fira Code";
+  font-family: 'Fira Code', monospace;
   color: rgb(192, 192, 192);
 }
 
 .navbar{
   background-color: rgb(33, 34, 34);
-  font-family: "Fira Code";
+  font-family: 'Fira Code', monospace;
   padding: 20px;
   font-size: 28px;
   text-align: center;
