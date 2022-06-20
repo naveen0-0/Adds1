@@ -1,0 +1,49 @@
+.container{
+  width: 90%;
+  margin:40px auto;
+  /* background-color: cadetblue; */
+}
+
+.title{
+  text-align: center;
+  font-size: 40px;
+  color: rgb(255, 174, 0);
+}
+
+.author{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 75%;
+  margin: 20px auto;
+}
+
+.authorImage{
+  width: 40px;
+  height: 40px;
+}
+
+.authorName{
+  padding-left: 10px;
+  font-family: "Fira Code";
+  color: rgb(192, 192, 192);
+  font-weight: bold;
+}
+
+.coverPhoto{
+  width: 75%;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.content{
+  width: 75%;
+  margin:10px auto;
+  color: rgb(172, 172, 172);
+  background-color: rgb(39, 39, 39);
+  word-wrap: break-word;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Fira Code";
+}

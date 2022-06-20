@@ -1,122 +1,67 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.blogs{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
-.main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer img {
-  margin-left: 0.5rem;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
-}
-
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
+.blog{
+  background-color: rgb(46, 43, 43);
+  padding: 15px;
   border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  border: 1px solid rgb(46, 43, 43);
+  box-shadow: 3px 3px 3px rgb(31, 30, 30);
+  transition: border 100ms ease-in;
+  cursor: pointer;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.blog:hover{
+  border: 1px solid rgb(117, 117, 117);
 }
 
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.coverPhoto{
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.authorImg{
+  width: 40px;
+  aspect-ratio: 1;
 }
 
-.logo {
-  height: 1em;
+.title{
+  text-align: center;
+  font-family: "Fira Code";
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  color: rgb(200, 200, 200);
+  padding: 10px;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.author{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding:10px;
+}
+
+.authorImgContainer{
+  padding-right: 10px;
+}
+
+.authorName{
+  font-family: "Fira Code";
+  color: rgb(192, 192, 192);
+}
+
+.navbar{
+  background-color: rgb(33, 34, 34);
+  font-family: "Fira Code";
+  padding: 20px;
+  font-size: 28px;
+  text-align: center;
+  color: rgb(199, 199, 199);
+  box-shadow: 3px 3px 3px rgb(44, 44, 44);
 }
