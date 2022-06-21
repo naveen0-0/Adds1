@@ -1,9 +1,7 @@
-import { GraphQLClient, gql } from 'graphql-request'
-import { useEffect } from 'react';
 import styles from '../../styles/Slug.module.css'
 import { fetchQuery } from '../../utils/util'
+import Head from 'next/head'
 
-const graphcms = new GraphQLClient("https://api-ap-south-1.graphcms.com/v2/cl4jeopdn4t0401xohuhxavfd/master");
 const QUERY = `
 query getBlog($slug:String){
     post(where:{slug:$slug}){
@@ -66,6 +64,10 @@ export async function getStaticProps({ params }){
 export default function BlogPost({ post }){
   return(
     <div className={styles.container}>
+
+      <Head>
+        <title>{post.slug}</title>
+      </Head>
 
       <div className={styles.title}>{post.title}</div>
 
